@@ -1,0 +1,74 @@
+h1{
+    background-color: rgb(77, 181, 189) !important;
+    font-size: 3em;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 15px 0;
+}
+h2{
+    background-color: rgb(77, 181, 189) !important;
+    font-size: 3em;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 15px 0;
+}
+/* button{
+    background-color: peachpuff;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-weight: bold;
+    border: 1px solid gray;
+    box-shadow: 2px 2px 2px black;
+    margin: 10px;
+    border-radius: 20% 20% 20% 20%;
+    }
+
+    button:hover {
+    box-shadow: 1px 1px 1px black;
+    background-color: #f1f1f1;
+    } */
+    button {
+        width: 10em;
+        position: relative;
+        height: 3.5em;
+        border: 3px ridge #149CEA;
+        outline: none;
+        background-color: transparent;
+        color: rgb(0, 0, 0);
+        transition: 1s;
+        border-radius: 0.3em;
+        font-size: 16px;
+        font-weight: bold;
+      }
+      
+      button::after {
+        content: "";
+        position: absolute;
+        top: -10px;
+        left: 3%;
+        width: 95%;
+        height: 40%;
+        background-color:none;
+        transition: 0.5s;
+        transform-origin: center;
+      }
+      
+      button::before {
+        content: "";
+        transform-origin: center;
+        position: absolute;
+        top: 80%;
+        left: 3%;
+        width: 95%;
+        height: 40%;
+        background-color:none;
+        transition: 0.5s;
+      }
+      
+      button:hover::before, button:hover::after {
+        transform: scale(0)
+      }
+      
+      button:hover {
+        box-shadow: inset 0px 0px 25px rgb(87, 143, 207);
+      }
